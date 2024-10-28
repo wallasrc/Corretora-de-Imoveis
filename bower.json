@@ -1,0 +1,17 @@
+{
+  "name": "bower.json",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Wallas Castro <wallas.rocha-castro@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
