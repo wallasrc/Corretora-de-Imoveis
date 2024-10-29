@@ -1,66 +1,69 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Projeto Imobiliário com Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este é um projeto de site para uma imobiliária, desenvolvido com o framework Laravel, que inclui um sistema administrativo completo. O objetivo inicial foi demonstrar domínio da base de PHP com Laravel, criando uma estrutura funcional e organizada.
 
-## About Laravel
+## Objetivos do Projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O projeto foi criado para:
+1. **Mostrar domínio do Laravel e PHP**: Implementando funcionalidades principais, autenticação, CRUDs básicos e integração com banco de dados e MVC.
+2. **Criar uma base para boas práticas**: A partir deste ponto, o plano é evoluir o projeto com melhores práticas de codificação e uso de design patterns.
+3. **Implementar camadas de Repositories e Services**: Para separar responsabilidades e organizar o código, será adicionado o uso de `Repositories` e `Services` para lidar com a lógica de negócios de forma mais modular.
+4. **Orientação a Testes**: A ideia é preparar o projeto para ter uma cobertura de testes ampla, começando com testes unitários e, gradualmente, evoluindo para testes de integração e de interface (end-to-end).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologias Utilizadas
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Laravel**: Framework PHP para desenvolvimento web.
+- **SQLite**: Banco de dados leve e fácil de configurar, ideal para desenvolvimento e testes locais.
+- **Materialize CSS**: Framework CSS baseado em Material Design, usado para estilizar e dar responsividade à interface.
 
-## Learning Laravel
+## Estrutura do Projeto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Frontend do Site**: Página principal, listagem de imóveis, filtro de busca e página de detalhes dos imóveis.
+- **Painel Administrativo**: Área para gerenciar os imóveis, clientes e mais.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Funcionalidades
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Gerenciamento de Imóveis**: CRUD de imóveis com informações como título, descrição, localização, preço e fotos.
+- **Gerenciamento de Usuários**: Administração de usuários do sistema com diferentes níveis de permissão.
+- **Relatórios e Estatísticas**: Painel com visualização de dados para apoiar as decisões estratégicas da imobiliária (em desenvolvimento).
 
-## Laravel Sponsors
+## Evolução do Projeto
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Próximas Etapas
 
-### Premium Partners
+1. **Refatoração com Repositories e Services**: Será implementada uma camada de `Repositories` para lidar com a persistência de dados e uma camada de `Services` para concentrar a lógica de negócios. 
+2. **Boas Práticas de Codificação**: O código será ajustado para seguir as melhores práticas de Laravel, garantindo escalabilidade e facilidade de manutenção.
+3. **Cobertura de Testes**: A base de testes será ampliada para incluir testes unitários e de integração, além de testes funcionais nas principais funcionalidades do sistema.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Instalação e Configuração
 
-## Contributing
+### Passo a Passo
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Clone o Repositório**: Clone este repositório em sua máquina.
+   `git clone <URL_DO_REPOSITORIO>`
+   `cd nome-do-projeto`
+   
+3. Instale as Dependências do Laravel
+   `composer install`
 
-## Code of Conduct
+4. Configure o Arquivo
+   `DB_CONNECTION=sqlite`
+   `DB_DATABASE=/caminho/para/database.sqlite`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. Crie o Arquivo de Banco de Dados
+   `touch database/database.sqlite`
+   
+7. Gere a Chave da Aplicação
+    `php artisan key:generate`
 
-## Security Vulnerabilities
+8. Execute as Migrações e Seeders
+   `php artisan migrate --seed`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#Contribuição
+Sugestões e melhorias são sempre bem-vindas! Para contribuir, siga as etapas:
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Faça um fork do projeto.
+2. Crie uma branch com a feature ou correção de bug: `git checkout -b minha-feature`.
+3. Faça um commit das suas mudanças: `git commit -m 'Minha nova feature'`.
+4. Faça um push para a branch: `git push origin minha-feature`.
+5. bra um `Pull Request`.
