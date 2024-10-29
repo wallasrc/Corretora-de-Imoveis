@@ -59,7 +59,7 @@ O projeto foi criado para:
 8. Execute as Migrações e Seeders
    `php artisan migrate --seed`
 
-#Contribuição
+# Contribuição
 Sugestões e melhorias são sempre bem-vindas! Para contribuir, siga as etapas:
 
 1. Faça um fork do projeto.
